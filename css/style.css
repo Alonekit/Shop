@@ -197,7 +197,6 @@ font-weight: normal;
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
-
 }
 
 .fetured__price {
@@ -274,5 +273,115 @@ align-self: center;
 margin-bottom: 25px;
 }
 
-.footer {
+.subscrible{
+    min-height: 488px;
+    background-image: url(../img/footer-bcg.jpg);
+    background-size: 116%;
+}
+
+.subscribe__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 488px;
+}
+
+.subscrible__form {
+    display: flex;
+    width: 557px;
+    min-height: 142px;
+    text-align: center;
+    position: relative;
+    margin: 150px 0 -30px 0;
+}
+
+.input {
+width: 322px;
+height: 49px;
+background-color: #E1E1E1;
+border: none;
+border-top-left-radius: 26px;
+border-bottom-left-radius:26px;
+padding-left: 22px;
+box-sizing: border-box;
+}
+
+.form__button {
+    width: 100px;
+    height: 49px;
+    padding: 7px 8px 6px 7px;
+    border: none;
+    background-color: var(--dark-pink) ;
+    text-align: center;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 26px;
+    font-size: 14;
+    font-weight: normal;
+    color:#FFFFFF;
+}
+
+.form__title {
+    width: 557px;
+    height: 61px;
+    position: absolute;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 163px;
+    right: 78px;
+    top: -86px;
+}
+
+.form__title--bold {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 2;
+}
+
+.subscrible__info {
+    width: 359px;
+    min-height: 225px;
+    text-align: center;
+    margin: 97px 0 176px 0;
+}
+
+.subscrible__img {
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
+.subscrible__text{
+    width: 359px;
+    min-height: 99px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.social-info{
+    min-height: 79px;
+    background-color: var(--dark-blue);
+}
+
+.social-info__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 79px;
+}    
+
+.buttons__item{
+    margin-right: 7px;
+}
+
+.buttons__item:last-child{
+    margin-right: 0;
+}
+
+.copy{
+    font-weight: normal;
+    color:#FBFBFB;
 }
