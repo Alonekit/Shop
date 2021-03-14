@@ -3,7 +3,13 @@
     --pink: #F1E4E6;
     --dark-pink: #F16D7F;
     --brown: #474040;
-    --card-color: #F8F8F8; 
+    --card-color: #F8F8F8;
+    --white:#FFFFFF;
+    --hot-pink:#F26376;
+    --black:#000000;
+    --light-gray:#E1E1E1;
+    --dark-gray:#5D5D5D;
+    --medium-ligjt-gray:#9F9F9F;
 }
 
 body {
@@ -16,10 +22,22 @@ body {
 
 .header {
     background-color: var(--dark-blue);
+    position: relative;
 }
 
 .header__navigation {
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    background:var(--white);
+}
+.header__contorls--with-menu{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.cart{
+    order: -1;
 }
 
 .container {
@@ -37,11 +55,21 @@ body {
 .header__logo {
     margin: 0 10px 0 0;
 }
+.header__logo:hover{
+    display: none;
+}
 
 .header__button {
     background-color: transparent;
     border: none;
     margin: 0 34px 0 0;
+}
+
+.header__button:hover + .header__navigation{
+    display: block;
+}
+.header__navigation:hover{
+    display: block;
 }
 
 .header__person-link {
@@ -135,10 +163,10 @@ flex-direction: column;
 }
 
 .item__inscription {
-line-height: 18px;
-text-align: center;
-text-transform: uppercase;
-font-weight: normal;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 
 .item__inscription--pink {
@@ -188,7 +216,7 @@ font-weight: normal;
 .fetured__title {
     text-transform: uppercase;
     font-size: 13px;
-    color: #000000;
+    color:var(--black)
 }
 
 .fetured__text {
@@ -196,7 +224,7 @@ font-weight: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #5D5D5D;
+    color:var(--dark-gray)
 }
 
 .fetured__price {
@@ -206,18 +234,18 @@ font-weight: normal;
 
 .header__title {
     font-size: 30px;
-    color: #222222;
+    color:var(--dark-blue);
 }
 
 .header__subtitle {
     margin-top: 6px;
     font-size: 14px;
     line-height: 17px;
-    color: #9F9F9F;
+    color: var(--medium-ligjt-gray);
 }
 
 .fetured__button {
-    border: 1px solid #F26376;
+    border: 1px solid var(--hot-pink);
     width: 212px;
     min-height: 48px;
     align-self: center;
@@ -225,12 +253,12 @@ font-weight: normal;
     box-sizing: border-box;
     margin-top: 48px;
     text-decoration: none;
-    color: #F26376;
+    color: var(--hot-pink)
 }
 
 .advanteges {
     min-height: 341px;
-    background-color: #222224;
+    background-color:var(--dark-blue);
     margin-top: 95px;
     
 }
@@ -254,7 +282,7 @@ font-weight: normal;
     font-weight: normal;
     font-size: 19.96px;
     line-height: 24px;
-    color: #FBFBFB;
+    color:var(--card-color);
 }
 
 .advanteges__text {
@@ -263,23 +291,24 @@ font-weight: normal;
     font-size: 13.972px;
     line-height: 17px;
     text-align: center;
-    color: #FBFBFB;
+    color:var(--card-color);
 }
 
 .advanteges__img {
-width: 45px;
-height: 45px;
-align-self: center;
-margin-bottom: 25px;
+    width: 45px;
+    height: 45px;
+    align-self: center;
+    margin-bottom: 25px;
+}
+
+.footer{
+    background-image: url(../img/footer-bcg.jpg);
+    background-size: 117%;
+    
 }
 
 .subscrible{
     min-height: 488px;
-    background-image: url(../img/footer-bcg.jpg);
-    background-size: 116%;
-}
-
-.subscribe__wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -297,14 +326,14 @@ margin-bottom: 25px;
 }
 
 .input {
-width: 322px;
-height: 49px;
-background-color: #E1E1E1;
-border: none;
-border-top-left-radius: 26px;
-border-bottom-left-radius:26px;
-padding-left: 22px;
-box-sizing: border-box;
+    width: 322px;
+    height: 49px;
+    background-color: var(--light-gray);
+    border: none;
+    border-top-left-radius: 26px;
+    border-bottom-left-radius: 26px;
+    padding-left: 22px;
+    box-sizing: border-box;
 }
 
 .form__button {
@@ -318,7 +347,7 @@ box-sizing: border-box;
     border-bottom-right-radius: 26px;
     font-size: 14;
     font-weight: normal;
-    color:#FFFFFF;
+    color:var(--white)
 }
 
 .form__title {
@@ -357,10 +386,10 @@ box-sizing: border-box;
     font-style: italic;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
+    color: var(--black);
 }
 
-.social-info{
+.footer__social-info{
     min-height: 79px;
     background-color: var(--dark-blue);
 }
@@ -383,5 +412,6 @@ box-sizing: border-box;
 
 .copy{
     font-weight: normal;
-    color:#FBFBFB;
+    color: var(--light-gray)
 }
+
