@@ -18,30 +18,27 @@
             <div class="header__wrapper">
                 <div class="header__contorls">
                     <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
-                    <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+                    <img class="header__loupe" src="./img/loupe.svg" alt="loupe" width="26" height="27">
                 </div>
-                <div class="header__contorls--with-menu">
-                    <a class="header__person-link" href="#"><img src="img/ico/person.svg" alt="registration" width="26"
-                            height="27"></a>
-                    <a class="cart" href="#"><img src="./img/ico/cart.svg" alt="cart" width="26" height="27"></a>
+                <div class="header__contorls">
                     <button class="header__button">
                         <img src="./img/burger.svg" alt="loupe" width="26" height="27">
                     </button>
                     <nav class="header__navigation">
                         menu
-                        <ul>
+                        <ul class="header-menu-list">
                             <li>
                                 <h2>man</h2>
-                                <ul>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
-                                    <li><a href="#">link</a></li>
+                                <ul class="header-menu-list">
+                                    <li><a href="#" class="header-menu-link">link</a></li>
+                                    <li><a href="#" class="header-menu-link">link</a></li>
+                                    <li><a href="#" class="header-menu-link">link</a></li>
+                                    <li><a href="#" class="header-menu-link">link</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <h2>woman</h2>
-                                <ul>
+                                <ul class="header-menu-list">
                                     <li><a href="#">link</a></li>
                                     <li><a href="#">link</a></li>
                                     <li><a href="#">link</a></li>
@@ -50,7 +47,7 @@
                             </li>
                             <li>
                                 <h2>kids</h2>
-                                <ul>
+                                <ul class="header-menu-list">
                                     <li><a href="#">link</a></li>
                                     <li><a href="#">link</a></li>
                                     <li><a href="#">link</a></li>
@@ -59,6 +56,13 @@
                             </li>
                         </ul>
                     </nav>
+                    <a class="header__person-link" href="#"><img src="img/ico/person.svg" alt="registration" width="26"
+                            height="27"></a>
+                    <a class="cart" href="#"><img src="./img/ico/cart.svg" alt="cart" width="26" height="27"></a>
+                </div>
+            </div>
+        </div>
+
     </header>
     <main>
         <section class="brand">
@@ -97,7 +101,10 @@
             </div>
             <ul class="fetured__list">
                 <li class="fetured__item">
-                    <img class="fetured__img" src="img/fetured/product-1.png" alt="product-1">
+                    <div class="cart-wrapper-overlay">
+                        <img class="fetured__img" src="img/fetured/product-1.png" alt="product-1">
+                        <button class="button-owerlay">Add to Cart</button>
+                    </div>
                     <div class="fetured__description">
                         <h3 class="fetured__title">ellery x m'o capsule</h3>
                         <p class="fetured__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -108,7 +115,10 @@
                     </div>
                 </li>
                 <li class="fetured__item">
-                    <img class="fetured__img" src="img/fetured/product-2.png" alt="product-2">
+                    <div class="cart-wrapper-overlay">
+                        <img class="fetured__img" src="img/fetured/product-2.png" alt="product-2">
+                        <button class="button-owerlay">Add to Cart</button>
+                    </div>
                     <div class="fetured__description">
                         <h3 class="fetured__title">ellery x m'o capsule</h3>
                         <p class="fetured__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -119,7 +129,10 @@
                     </div>
                 </li>
                 <li class="fetured__item">
-                    <img class="fetured__img" src="img/fetured/product-3.png" alt="product-3">
+                    <div class="cart-wrapper-overlay">
+                        <img class="fetured__img" src="img/fetured/product-3.png" alt="product-3">
+                        <button class="button-owerlay">Add to Cart</button>
+                    </div>
                     <div class="fetured__description">
                         <h3 class="fetured__title">ellery x m'o capsule</h3>
                         <p class="fetured__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -130,7 +143,10 @@
                     </div>
                 </li>
                 <li class="fetured__item">
-                    <img class="fetured__img" src="img/fetured/product-4.png" alt="product-4">
+                    <div class="cart-wrapper-overlay">
+                        <img class="fetured__img" src="img/fetured/product-4.png" alt="product-4">
+                        <button class="button-owerlay">Add to Cart</button>
+                    </div>
                     <div class="fetured__description">
                         <h3 class="fetured__title">ellery x m'o capsule</h3>
                         <p class="fetured__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -141,7 +157,10 @@
                     </div>
                 </li>
                 <li class="fetured__item">
-                    <img class="fetured__img" src="img/fetured/product-5.png" alt="product-5">
+                    <div class="cart-wrapper-overlay">
+                        <img class="fetured__img" src="img/fetured/product-5.png" alt="product-4">
+                        <button class="button-owerlay">Add to Cart</button>
+                    </div>
                     <div class="fetured__description">
                         <h3 class="fetured__title">ellery x m'o capsule</h3>
                         <p class="fetured__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -152,7 +171,10 @@
                     </div>
                 </li>
                 <li class="fetured__item">
-                    <img class="fetured__img" src="img/fetured/product-6.png" alt="product-6">
+                    <div class="cart-wrapper-overlay">
+                        <img class="fetured__img" src="img/fetured/product-6.png" alt="product-6">
+                        <button class="button-owerlay">Add to Cart</button>
+                    </div>
                     <div class="fetured__description">
                         <h3 class="fetured__title">ellery x m'o capsule</h3>
                         <p class="fetured__text">Known for her sculptural takes on traditional tailoring, Australian
@@ -161,7 +183,6 @@
                             teams up with Moda Operandi.</p>
                         <p class="fetured__price">$52.00</p>
                     </div>
-                    <!-- <button>Add to Cart</button> -->
                 </li>
             </ul>
             <a class="fetured__button" href="#">Browse All Product</a>
